@@ -35,8 +35,7 @@ export function ComplianceFooter() {
         </ul>
 
         <p className="mt-8 text-sm text-parchment/50">
-          © {new Date().getFullYear()} Weed and Read. Licensed cannabis retail
-          for adults 21+.
+          © 2026 Weed and Read. Licensed cannabis retail for adults 21+.
         </p>
       </div>
     </footer>
