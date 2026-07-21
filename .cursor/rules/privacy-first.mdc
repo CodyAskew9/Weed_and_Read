@@ -1,0 +1,29 @@
+---
+description: Strict privacy-first architecture — no tracking, age gate, minimal newsletter schema
+alwaysApply: true
+---
+
+# Privacy-First Architecture
+
+## Zero Tracking
+
+Do **not** add Google Analytics, Facebook Pixel, or any IP/location tracking scripts.
+
+## Age Gate (21+)
+
+- Stateless React modal only.
+- Persist verification with `localStorage` (boolean).
+- Do **not** use session cookies for age verification.
+
+## Newsletter Schema (Minimal)
+
+Subscriber table may only contain:
+
+| Column | Type |
+|--------|------|
+| `id` | UUID |
+| `email` | String, unique |
+| `isActive` | Boolean |
+| `consentedAt` | DateTime |
+
+**Never** add first name, last name, phone, IP address, or other PII columns.

@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --ad-largest: clamp(2.75rem, 7vw, 5rem);
+  --ad-warning: max(0.75rem, calc(var(--ad-largest) * 0.1));
+  --background: #2b1d14;
+  --foreground: #f5e6c8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-san-mateo-blue: #1b365d;
+  --color-wreath-green: #2d5a27;
+  --color-sign-red: #b23a3a;
+  --color-mahogany: #2b1d14;
+  --color-stamped-gold: #d4af37;
+  --color-parchment: #f5e6c8;
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+  --font-display: var(--font-display);
+  --font-berkshire: var(--font-berkshire);
+  --font-body: var(--font-body);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-stamped-gold) 45%, transparent);
+    color: var(--color-mahogany);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes gate-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.9s ease-out both;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 0.9s ease-out 0.18s both;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.9s ease-out 0.36s both;
+}
+
+.animate-soft-glow {
+  animation: soft-glow 8s ease-in-out infinite;
+}
+
+.animate-gate-in {
+  animation: gate-in 0.45s ease-out both;
+}
+
+.compliance-warning {
+  font-size: var(--ad-warning);
+  line-height: 1.5;
+}

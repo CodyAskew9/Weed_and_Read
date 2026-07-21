@@ -1,0 +1,13 @@
+---
+description: Weed and Read business context, vibe, audience, and tech stack
+alwaysApply: true
+---
+
+# Weed and Read — Project Context
+
+- **Business:** Privacy-first cannabis boutique in Albuquerque, New Mexico.
+- **Vibe:** Victorian bank reading room (dark mahogany, gold trim, warm parchment, vintage books) juxtaposed with a modest blue and green storefront.
+- **Audience:** Older, literary-minded patrons who value extreme privacy and quiet over loud modern dispensary culture.
+- **Stack:** React, Tailwind CSS, Node.js, Prisma, and raw SQL.
+
+Prefer library/reading-room metaphors over typical dispensary language and visuals.

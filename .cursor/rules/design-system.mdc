@@ -1,0 +1,32 @@
+---
+description: Victorian reading-room Tailwind design system — colors, type, catalog cards
+globs: "**/*.{tsx,jsx,css,html}"
+alwaysApply: false
+---
+
+# UI/UX Design System
+
+Avoid stark white or neon-green dispensary aesthetics.
+
+## Colors (Tailwind tokens)
+
+| Token | Hex | Use |
+|-------|-----|-----|
+| `san-mateo-blue` | `#1B365D` | Primary headers/footers |
+| `wreath-green` | `#2D5A27` | Secondary accents |
+| `sign-red` | `#B23A3A` | High-contrast CTAs |
+| `mahogany` | `#2B1D14` | Dark backgrounds / body |
+| `stamped-gold` | `#D4AF37` | Borders, highlights |
+| `parchment` | `#F5E6C8` | Text, card backgrounds |
+
+## Typography
+
+- **Headers (H1/H2):** Vintage serif — Berkshire Swash for H1; Playfair Display for H2 and other display type.
+- **Body:** Clean sans (e.g. Inter), default `text-lg` / 18px, `leading-relaxed` for older readers.
+
+## Product Grids
+
+Style as vintage library catalog cards:
+
+- Use **Synopsis** for descriptions (not generic “Description”).
+- Use Dewey Decimal–style catalog numbers instead of standard tags.
